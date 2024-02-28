@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "noErrorTruncation": true,
+    "experimentalDecorators": true,
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "plugins": [
+      {
+        "name": "@effect/language-service"
+      }
+    ]
+  },
+
+  "include": ["src/**/*"]
+}
