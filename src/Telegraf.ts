@@ -42,7 +42,7 @@ export class Telegraf extends Context.Tag("Telegraf")<
   Telegraf,
   Effect.Effect.Success<typeof make>
 >() {
-  static Live = Layer.scoped(this, make)
+  static Live = Layer.effect(this, make)
 
   static Launch = Layer.scopedDiscard(
     Effect.gen(function* (_) {
